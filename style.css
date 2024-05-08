@@ -209,3 +209,7 @@ block {
     color: var(--font-color);
     padding: 2px 2px;
 }
+
+.change__infos__form {
+    margin-left: 1.5em;
+}
