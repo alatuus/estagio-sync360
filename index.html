@@ -28,12 +28,12 @@
                     </div>
                 </div>
                 <div class="user__infos__data">
-                    <block>Nome completo</block>
-                    <block>Idade</block>
-                    <block>Rua</block>
-                    <block>Bairro</block>
-                    <block>Estado</block>
-                    <block class="usr__bio">Biografia</block>
+                    <block id="nameOut">Nome completo</block>
+                    <block id="ageOut">Idade</block>
+                    <block id="streetOut">Rua</block>
+                    <block id="neighborhoodOut">Bairro</block>
+                    <block id="stateOut">Estado</block>
+                    <block class="usr__bio" id="aboutOut">Biografia</block>
                 </div>
             </container>
         </section>
@@ -49,24 +49,32 @@
                         <span class="close">&times;</span>
                         <h2>Alterar informações de usuário</h2>
                     </div>
-                    <div>
-                    <h4 class="edit__titles">Informações pessoais</h4>
-                    <p class="edit__infos">Nome completo</p>
-                    <input type="text" class="change__user__infos__form__input" placeholder="Nome completo">
-                    <p class="edit__infos">Idade</p>
-                    <input type="text" class="change__user__infos__form__input" placeholder="Idade">
-                    <h4 class="edit__titles">Informações de endereço</h4>
-                    <p class="edit__infos">Rua</p>
-                    <input type="text" class="change__user__infos__form__input" placeholder="Rua">
-                    <p class="edit__infos">Bairro</p>
-                    <input type="text" class="change__user__infos__form__input" placeholder="Bairro">
-                    <p class="edit__infos">Estado</p>
-                    <input type="text" class="change__user__infos__form__input" placeholder="Estado">
-                    <h4 class="edit__titles">Sobre mim</h4>
-                    <p class="edit__infos">Biografia</p>
-                    <textarea class="change__user__infos__form__textarea" placeholder="Biografia"></textarea>
-                    <button class="save__btn">Salvar alterações</button>
-                    </div>
+                    <form autocomplete="off" id="form">
+                        <h4 class="edit__titles">Informações pessoais</h4>
+
+                        <p class="edit__infos">Nome completo</p>
+                        <input type="text" id="userName" class="change__user__infos__form__input" placeholder="Nome completo" oninput="updateName()">
+
+                        <p class="edit__infos">Idade</p>
+                        <input type="text" id="userAge" class="change__user__infos__form__input" placeholder="Idade" oninput="updateAge()">
+
+                        <h4 class="edit__titles">Informações de endereço</h4>
+
+                        <p class="edit__infos">Rua</p>
+                        <input type="text" id="userStreet" class="change__user__infos__form__input" placeholder="Rua" oninput="updateStreet()">
+
+                        <p class="edit__infos">Bairro</p>
+                        <input type="text" id="userNeighborhood" class="change__user__infos__form__input" placeholder="Bairro" oninput="updateNeighborhood()">
+
+                        <p class="edit__infos">Estado</p>
+                        <input type="text" id="userState" class="change__user__infos__form__input" placeholder="Estado" oninput="updateState()">
+
+                        <h4 class="edit__titles">Sobre mim</h4>
+
+                        <p class="edit__infos">Biografia</p>
+                        <textarea class="change__user__infos__form__textarea" id="userAbout" placeholder="Biografia" oninput="updateAbout()"></textarea>
+                        
+                    </form>
                     
                 </div>
             </div>
