@@ -122,6 +122,10 @@ block {
     background-color: rgba(0,0,0,0.4); 
 }
 
+.change__infos__head {
+    padding: 0.5em;
+}
+
 .content {
     background-color: var(--background-color);
     margin: 4% auto;
