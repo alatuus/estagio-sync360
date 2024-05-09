@@ -107,7 +107,8 @@ input[type="file"] {
 }
 
 .usr__bio {
-    line-height: 60px;
+    line-height: 20px;
+    text-align: left;
 }
 
 .change__infos__modal {
